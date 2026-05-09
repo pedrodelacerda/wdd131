@@ -1,0 +1,213 @@
+:root {
+    --font-color: #334155;
+    --black-color: #0f172a;
+    --nav-background-color: #ffffff;
+    --primary-color: #1e293b;
+    --secondary-color: #e2e8f0;
+    --accent1-color: #1e2f3f;
+    --accent2-color: #d4af37;
+    --background-main-color: #f8fafc;
+    --heading-font: "Outfit", sans-serif; 
+    --body-font: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--black-color);
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+/* the header styles */
+#course-title {
+    display: block;
+    background-color:var(--primary-color);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: var(--nav-background-color);
+}
+
+nav {
+    background-color: var(--accent1-color);   
+}
+
+.links {
+    display: flex;
+    max-width: 800px;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--nav-background-color);
+    padding: 10px;
+}
+
+header a:hover {
+    color: var(--accent2-color);
+    transition: 0.3s;
+}
+
+/* the main styeles */
+main {
+    display: grid;
+    grid-template-columns: 1fr 330px;
+    grid-template-rows: 100px 1fr;
+    max-width: 900px;
+    margin: 20px auto;
+    gap: 25px;
+    background-color: var(--background-main-color);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.card{
+    border-radius: 8px;
+}
+
+.card1 {
+    border: 1px solid var(--secondary-color);
+    background-color: var(--nav-background-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 370px;
+    height: auto;
+    text-align: center;
+}
+
+.card2 {
+    border: 1px solid var(--secondary-color);
+    background-color: var(--nav-background-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 370px;
+    height: auto;
+    text-align: center;
+}
+
+.span {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--nav-background-color);
+    width: 100%;
+    padding: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card01 {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 150 ;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.pphoto {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    padding: 20px 0px 10px 15px;
+    text-align: justify;
+}
+
+.photo {
+    grid-row: 1;
+    grid-column: 4/5;
+    padding: 15px;
+}
+
+.location {
+    grid-row: 2;
+    grid-column: 1/5;
+    text-align: center;
+    font-family:var(--heading-font);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.line {
+    grid-row: 3;
+    grid-column: 1/5;
+    border: 0;
+    border-top: 1px solid var(--secondary-color);
+    width: 80%;
+    margin: 0 auto 15px auto;
+}
+
+.flag {
+    height: auto;
+    width: 120px;
+    grid-column: 1/2;
+    grid-row: 4;
+    border: 0.5px solid var(--secondary-color);
+    justify-self: center;
+    /* margin-left: 10px;
+    margin-top: 15px; */
+}
+
+.pflag {
+    grid-row: 4;
+    grid-column: 1/2;
+    align-self: end;
+    text-align: center;
+    max-width: 141px;
+    padding-left: 20px;
+    font-size: 11px;
+    font-style: italic;
+    padding-top: 5px;
+    margin-top: 85px;
+}
+
+.minas {
+    grid-column: 2/5;
+    grid-row: 4;
+    text-align: justify;
+    padding: 0 20px;
+    align-self: center;
+}
+
+main ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80%;
+}
+
+main li {
+    padding-bottom: 3px;
+}
+
+/* the footer styles */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--nav-background-color);
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 4px solid var(--accent2-color);
+}
+
+footer p {
+    color: var(--nav-background-color);
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
