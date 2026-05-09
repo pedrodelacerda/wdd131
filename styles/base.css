@@ -15,11 +15,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--black-color);
 }
 
 body {
     font-family: var(--body-font);
+    color: var(--black-color);
 }
 
 /* the header styles */
@@ -198,6 +198,10 @@ main ul {
 
 main li {
     padding-bottom: 5px;
+}
+
+.links a {
+    color: var(--black-color);
 }
 
 /* the footer styles */
