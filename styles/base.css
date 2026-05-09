@@ -55,10 +55,6 @@ header a {
     padding: 10px;
 }
 
-.links {
-    color: var(--nav-background-color);
-}
-
 header a:hover {
     color: var(--accent2-color);
     transition: 0.3s;
