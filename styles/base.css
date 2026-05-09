@@ -23,6 +23,11 @@ body {
 }
 
 /* the header styles */
+
+header {
+    max-width: 100%;
+}
+
 #course-title {
     display: block;
     background-color:var(--primary-color);
@@ -48,6 +53,10 @@ header a {
     text-decoration: none;
     color: var(--nav-background-color);
     padding: 10px;
+}
+
+.links {
+    color: var(--nav-background-color);
 }
 
 header a:hover {
