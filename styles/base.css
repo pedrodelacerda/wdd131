@@ -111,7 +111,7 @@ h1 {
 
 .card01 {
     display: grid;
-    grid-template-columns: 150px 1fr 1fr 150 ;
+    grid-template-columns: 150px 1fr 1fr 150px ;
     grid-template-rows: auto auto auto auto;
     gap: 10px;
     padding-bottom: 20px;
