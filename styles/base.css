@@ -211,3 +211,7 @@ footer p {
     margin: 5px 0;
     font-size: 0.9rem;
 }
+
+#currentyear {
+    color: var(--background-main-color);
+}
