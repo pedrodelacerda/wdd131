@@ -1,5 +1,5 @@
 :root {
-    --header-highlight-color: #B85A3A;
+    --header-highlight-color: #b44824;
     --footer-dark-text-color: #2C3539;
     --site-bg-color: #F4F1EA;
     --card-bg-color: #FFFFFF;
@@ -19,7 +19,7 @@ body {
     background-color: var(--site-bg-color);
 }
 
-                                        /* header styles */
+
 header {
     background-color: var(--header-highlight-color);
     padding: 1rem 1.5rem;
@@ -74,7 +74,7 @@ nav {
 }
 
 .nav-links.open {
-    display: flex;
+    display: flex !important;
 }
 
 .nav-links li {
@@ -107,37 +107,15 @@ nav {
     transform: rotate(-45deg) translateY(-8px) translateX(6px);
 }
 
-                                        /* main styles */
 
 h1 {
+    grid-column: 1 / -1; 
+    text-align: center;
     text-align: center;
     padding: 20px;
     width: 100%;
     font-family: var(--heading-font);
     color: var(--header-highlight-color);
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-figure {
-    background-color: var(--card-bg-color);
-    border: 1px solid var(--border-divider-color);
-    padding: 10px;
-    margin: 10px;
-    flex: 1 1 calc(100% -20px);
-    max-width: 400px;
-    text-align: center;
-}
-
-figcaption {
-    margin-top: 5px;
-    font-family: var(--body-font);
-    color: var(--footer-dark-text-color);
-    font-size: 0.9rem;
 }
 
 main {
@@ -147,19 +125,45 @@ main {
     justify-content: center;
     padding: 1rem;
     margin: 0 auto;
-    gap: 5px;
+    gap: 20px;
 }
-                                        /* footer styles */
+
+figure {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-divider-color);
+    padding: 10px;
+    margin: 0; 
+    flex: 1 1 calc(100% - 20px); 
+    max-width: 400px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-family: var(--body-font);
+    color: var(--footer-dark-text-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
 
 footer {
     background-color: var(--header-highlight-color);
     color: var(--light-text-color);
     text-align: center;
-}                 
+    padding: 1.5rem;
+    margin-top: 2rem;
+} 
 
 .copyright {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 5px;
 }
 
@@ -171,4 +175,41 @@ footer {
 
 p {
     margin: 5px 0;
+}
+
+
+@media screen and (min-width: 64rem) {
+
+    .hamburger-btn {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+        gap: 1.5rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0;
+    }
+
+    .nav-links a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    figure {
+        max-width: 100%; 
+    }
 }
