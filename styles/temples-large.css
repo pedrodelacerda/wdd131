@@ -1,27 +1,35 @@
-.hamburger-btn {
-    display: none !important;
-}
+@media screen and (min-width: 64rem) {
 
-.nav-links {
-    display: flex !important;
-    flex-direction: row;
-    position: static;
-    width: auto;
-    background: transparent !important;
-    box-shadow: none;
-    gap: 1.5rem;
-}
+    .hamburger-btn {
+        display: none !important;
+    }
 
-.nav-links a {
-    padding: 0.5rem 0;
-}
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+        gap: 1.5rem;
+    }
 
-.nav-links a:hover {
-    background: transparent;
-    text-decoration: underline;
-}
+    .nav-links a {
+        padding: 0.5rem 0;
+    }
 
-figure {
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: 300px;
+    .nav-links a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    figure {
+        max-width: 100%; 
+    }
 }

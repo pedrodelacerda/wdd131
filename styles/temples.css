@@ -19,7 +19,7 @@ body {
     background-color: var(--site-bg-color);
 }
 
-
+/* HEADER STYLES */
 header {
     background-color: var(--header-highlight-color);
     padding: 1rem 1.5rem;
@@ -107,15 +107,14 @@ nav {
     transform: rotate(-45deg) translateY(-8px) translateX(6px);
 }
 
-
+/* MAIN STYLES */
 h1 {
-    grid-column: 1 / -1; 
-    text-align: center;
     text-align: center;
     padding: 20px;
     width: 100%;
     font-family: var(--heading-font);
     color: var(--header-highlight-color);
+    grid-column: 1 / -1;
 }
 
 main {
@@ -152,7 +151,7 @@ figcaption {
     font-weight: 500;
 }
 
-
+/* FOOTER STYLES */
 footer {
     background-color: var(--header-highlight-color);
     color: var(--light-text-color);
@@ -175,41 +174,4 @@ footer {
 
 p {
     margin: 5px 0;
-}
-
-
-@media screen and (min-width: 64rem) {
-
-    .hamburger-btn {
-        display: none !important;
-    }
-
-    .nav-links {
-        display: flex !important;
-        flex-direction: row;
-        position: static;
-        width: auto;
-        background-color: transparent;
-        box-shadow: none;
-        gap: 1.5rem;
-    }
-
-    .nav-links a {
-        padding: 0.5rem 0;
-    }
-
-    .nav-links a:hover {
-        background-color: transparent;
-        text-decoration: underline;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-    }
-
-    figure {
-        max-width: 100%; 
-    }
 }
