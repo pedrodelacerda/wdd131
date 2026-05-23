@@ -184,12 +184,12 @@ footer {
 
     .data-card {
         top: 5%;
-        left: 5%;
+        left: 2.5%;
     }
 
     .weather-card{
         bottom: 5%;
-        right: 5%;
+        right: 2.5%;
     }
     
     .weather-header-container {
