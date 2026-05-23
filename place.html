@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brasil</title>
+    <meta name="author" content="Pedro Ribeiro">
+    <meta name="description" content="Information about Brazil">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Brasil</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero-img">
+            <picture>
+                <source media="(min-width: 769px)" srcset="images/hero-large-mobile.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium-img.webp">
+                <img class="heroimg" src="images/hero-small-img.webp" alt="Brazilian Jaguar">
+            </picture>
+        </div>
+        <div class="data-card">
+            <h2>Data</h2>
+            <ul> 
+                <li><strong>Area:</strong> 8,515,767 km²</li>
+                <li><strong>Population:</strong> 213,000,000</li>
+                <li><strong>Capital:</strong> Brasília</li>
+                <li><strong>Official Language:</strong> Portuguese</li>
+                <li><strong>Currency:</strong> Brazilian Real (BRL)</li>
+                <li><strong>Time Zone:</strong> UTC-3</li>
+                <li><strong>Calling Code:</strong> +55</li>
+                <li><strong>Internet TLD:</strong> .br</li>
+            </ul>
+        </div>
+        <div class="weather-card">
+            <h2>Weather</h2>
+            <img class="svg" src="images/cloud-icon.svg" alt="Weather Icon">
+            <ul>
+                <li><strong>Temperature:</strong> 25°C</li>
+                <li><strong>Condition:</strong> Sunny</li>
+                <li><strong>Wind Speed:</strong> 10 km/h</li>
+                <li><strong>Wind Chill:</strong> 23°C</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-card">
+            <p class="">© <span id="currentyear"></span> - Pedro Ribeiro - Montes Claros/MG</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
