@@ -66,6 +66,8 @@ main {
     width: 50px;
     height: auto;
     padding-bottom: 15px;
+    align-self: center;
+    justify-self: center;
 }
 
 .data-card, .weather-card {
@@ -76,6 +78,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.weather-header-container{
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2 {
@@ -166,12 +173,13 @@ footer {
         padding: 15px;
     }
 
-    main h2 {
+    .data-card h2 {
         background-color: var(--color-brand-primary-card);
         color: var(--color-text-light);
         width: 105%;
         margin-bottom: 25px;
-        margin-left: -30px;
+        margin-left: -25px;
+        text-align: left;
     }
 
     .data-card {
@@ -183,11 +191,33 @@ footer {
         bottom: 5%;
         right: 5%;
     }
-
-    .weather-card h2 {
-        width: 105%;
-        margin-left: -45px;
+    
+    .weather-header-container {
+        background-color: var(--color-brand-primary-card);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; 
+        color: var(--color-text-light);
+        width: 115%;
+        margin-bottom: 25px;
+        margin-left: -30px;
+        text-align: right;
     }
+
+    
+    .weather-header-container .svg {
+        padding-bottom: 0; 
+        margin: 0;
+    }
+
+    .svg {
+        width: 40px;
+        height: auto;
+        transform: translateX(-15px);
+    }
+
 
     /* footer */
 
