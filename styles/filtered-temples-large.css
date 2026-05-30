@@ -1,0 +1,36 @@
+@media screen and (min-width: 64rem) {
+
+    .hamburger-btn {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+        gap: 1.5rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0;
+    }
+
+    .nav-links a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    .temple-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 100%;
+    }
+
+    figure {
+        max-width: 100%; 
+    }
+}

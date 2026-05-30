@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Fundamentals - Pedro Ribeiro</title>
+    <meta name="description" content="Home page for WDD frontend development standards assignment, showcasing semantic HTML, clean CSS, and accessibility best practices.">
+    <meta name="author" content="Pedro Ribeiro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 1024px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+            <nav>
+                <span class="nav-logo">Temple Album</span>
+                <button class="hamburger-btn" id="menu-button" aria-label="Togglemenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links closed" id="menu-links">
+                    <li><a href="#" class="active" id="home-link">Home</a></li>
+                    <li><a href="#" id="old-temples">Old</a></li>
+                    <li><a href="#" id="new-temples">New</a></li>
+                    <li><a href="#" id="large-temples">Large</a></li>
+                    <li><a href="#" id="small-temples">Small</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="temple-grid" id="temple-grid">
+            
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">©</p>
+        <p class="name"><span id="currentyear"></span> - Pedro Ribeiro - Montes Claros/MG</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
