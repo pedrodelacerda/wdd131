@@ -79,7 +79,7 @@ const temples = [
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/curitiba-brazil-temple/curitiba-brazil-temple-60225.jpg"
   },
-  // Add more temple objects here...
+
 ];
 
 const menuButton = document.getElementById("menu-button");

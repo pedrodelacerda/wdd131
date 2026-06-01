@@ -1,0 +1,134 @@
+/* 
+   VOXEL FORGE 3D - SITE PLAN STYLES
+ */
+
+:root {
+    --bg-primary: #0B0F17;      
+    --bg-surface: #1A202C;      
+    --color-accent: #00D2FF;    
+    --color-border: #4A5568;
+    --text-main: #E2E8F0;       
+    --text-muted: #A0AEC0;
+    --font-heading: 'Orbitron', 'Rajdhani', sans-serif;
+    --font-body: 'Roboto', 'Segoe UI', sans-serif;
+    --font-tech: 'Roboto Mono', 'Consolas', monospace;
+}
+
+/* Global Reset & Base Elements */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer Styling using Secondary Background */
+header, footer {
+    background-color: var(--bg-surface);
+    border-bottom: 2px solid var(--color-border);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer {
+    border-bottom: none;
+    border-top: 2px solid var(--color-border);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
+
+/* Main Content Container */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Headings Styling using Primary Accent and Tech Fonts */
+h1 {
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+    font-size: 2.5rem;
+    border-bottom: 3px double var(--color-border);
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-left: 4px solid var(--color-accent);
+    padding-left: 10px;
+}
+
+/* Section and Text Paragraphs Layout */
+section {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: var(--text-main);
+}
+
+/* Lists styling */
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+}
+
+/* Technical / Label Styling */
+ Tender Text Tags */
+.tech-label {
+    font-family: var(--font-tech);
+    color: var(--color-main);
+    margin: 0;
+}
+
+/* Interactive Look for Color Scheme Presentation */
+.color-list li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-main);
+}
+
+.color-list strong {
+    color: var(--text-main);
+}
+
+.color-box {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+    flex-shrink: 0;
+}
+
+/* Typography List Specific Font Previews */
+.font-list .font-heading {
+    font-family: var(--font-heading);
+}
+
+.font-list .font-body {
+    font-family: var(--font-body);
+}
+
+.font-list .font-tech {
+    font-family: var(--font-tech);
+    color: var(--color-accent);
+}
