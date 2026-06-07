@@ -1,20 +1,19 @@
-/* 
-   VOXEL FORGE 3D - SITE PLAN STYLES
- */
+/* VOXEL FORGE 3D - SITE PLAN STYLES */
 
 :root {
-    --bg-primary: #0B0F17;      
-    --bg-surface: #1A202C;      
-    --color-accent: #00D2FF;    
-    --color-border: #4A5568;
-    --text-main: #E2E8F0;       
-    --text-muted: #A0AEC0;
+    --bg-primary: #0B0F17;      /* Obsidian Night */
+    --bg-surface: #1A202C;      /* Industrial Slate */
+    --color-accent: #00D2FF;    /* Voxel Cyan Neon */
+    --color-border: #4A5568;    /* Brushed Steel */
+    
+    --text-main: #E2E8F0;       /* Platinum White */
+    --text-muted: #A0AEC0;      /* Muted Ash */
+
     --font-heading: 'Orbitron', 'Rajdhani', sans-serif;
     --font-body: 'Roboto', 'Segoe UI', sans-serif;
     --font-tech: 'Roboto Mono', 'Consolas', monospace;
 }
 
-/* Global Reset & Base Elements */
 body {
     background-color: var(--bg-primary);
     color: var(--text-main);
@@ -24,7 +23,6 @@ body {
     padding: 0;
 }
 
-/* Header and Footer Styling using Secondary Background */
 header, footer {
     background-color: var(--bg-surface);
     border-bottom: 2px solid var(--color-border);
@@ -40,14 +38,12 @@ footer {
     margin-top: 3rem;
 }
 
-/* Main Content Container */
 main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1.5rem;
 }
 
-/* Headings Styling using Primary Accent and Tech Fonts */
 h1 {
     font-family: var(--font-heading);
     color: var(--color-accent);
@@ -67,7 +63,6 @@ h2 {
     padding-left: 10px;
 }
 
-/* Section and Text Paragraphs Layout */
 section {
     background-color: var(--bg-surface);
     border: 1px solid var(--color-border);
@@ -80,7 +75,6 @@ p {
     color: var(--text-main);
 }
 
-/* Lists styling */
 ul, ol {
     padding-left: 1.5rem;
 }
@@ -89,21 +83,18 @@ li {
     margin-bottom: 0.8rem;
 }
 
-/* Technical / Label Styling */
- Tender Text Tags */
 .tech-label {
     font-family: var(--font-tech);
-    color: var(--color-main);
+    color: var(--color-accent);
     margin: 0;
 }
 
-/* Interactive Look for Color Scheme Presentation */
 .color-list li {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 12px;
-    color: var(--text-main);
+    color: var(--text-muted);
 }
 
 .color-list strong {
@@ -119,7 +110,14 @@ li {
     flex-shrink: 0;
 }
 
-/* Typography List Specific Font Previews */
+.box-bg-primary { background-color: #0B0F17; }
+.box-bg-surface { background-color: #1A202C; }
+.box-color-accent { background-color: #00D2FF; }
+.box-color-border { background-color: #4A5568; }
+.box-text-main { background-color: #E2E8F0; }
+.box-text-muted { background-color: #A0AEC0; }
+
+
 .font-list .font-heading {
     font-family: var(--font-heading);
 }
