@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    form {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .rating-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
