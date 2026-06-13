@@ -7,49 +7,65 @@
     <meta name="author" content="Pedro Ribeiro">
     <meta name="description"
       content="Pedro Ribeiro's BYU-Idaho - WDD 131">
-    <link rel="stylesheet" href="styles/">
-    <script src="scripts/" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&family=Roboto+Mono&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navigation">
             <img src="images/logovoxel.png" alt="Logo">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Catalog</a></li>
-                <li><a href="">Requests and Contact</a></li>
-                <li><a href="">Links</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="budget.html">Requests and Contact</a></li>
+                <li><a href="reference.html">Links</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1 class="title">Voxel Forge 3D</h1> 
         <section class="about-us-container">
-            <h2 class="visual-hidden">About Our Studio</h2> 
+            <h2 class="visual-hidden">About Our Work</h2> 
             <article class="about-block">
                 <h3>Who We Are</h3>
-                <p>Content...</p>
+                <p>Based in Montes Claros, Voxel Forge 3D is an innovative additive manufacturing 
+                    studio specializing in high-precision 3D printing. We bridge the gap between digital 
+                    concepts and physical reality, turning complex industrial layouts and creative designs 
+                    into tangible, durable structures.
+                </p>
             </article>
             <article class="do-block">
                 <h3>What We Do</h3>
-                <p>Content...</p>
+                <p>We deliver tailored 3D printing solutions utilizing advanced materials like PLA, 
+                    ABS, PETG, and flexible TPU. From functional mechanical engineering prototypes and 
+                    industrial components to highly detailed geek culture models and custom decor pieces, 
+                    our laboratory handles layer-by-layer manufacturing with absolute fidelity.
+                </p>
             </article>
             <article class="why-us-block">
                 <h3>Why Choose Us</h3>
-                <p>Content...</p>
+                <p>We slice through technical limitations by combining hardware optimization with rigid 
+                    quality control. Whether optimizing print parameters for a rugged engineering file 
+                    or fine-tuning aesthetics for a custom display piece, our precision slicing algorithms 
+                    and multi-material expertise ensure your specifications are met on the very first layer.
+                </p>
             </article>
         </section>
         <section class="featured-projects-container">
             <h2 class="home-projects">Featured Projects</h2>
-            <div class="featured-projects">
-                <img src="images/" alt="Project 1">
-                <img src="images/" alt="Project 2">
-                <img src="images/" alt="Project 3">
-            </div>
+            <!-- <div class="featured-projects"> -->
+            <img src="images/hand-project.webp" alt="Hand Project">
+            <img src="images/cervo-project.jpg" alt="Cervo Project">
+            <img src="images/pokemon-project.jpg" alt="Pokemon Project">
+            <!-- </div> -->
         </section>
     </main>
     <footer>
-        <p>©<span id="currentyear"></span> - Pedro Ribeiro - Montes Claros/MG</p>
+        <p> © <span id="currentyear"> </span> - Pedro Ribeiro - Montes Claros/MG</p>
         <p id="lastModified"></p>
     </footer>
 </body>

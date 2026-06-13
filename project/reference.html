@@ -7,21 +7,37 @@
     <meta name="author" content="Pedro Ribeiro">
     <meta name="description"
       content="Pedro Ribeiro's BYU-Idaho - WDD 131">
-    <link rel="stylesheet" href="styles/">
-    <script src="scripts/" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navigation">
-            <img src="images/" alt="Logo">
+            <img src="images/logovoxel.png" alt="Logo">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Catalog</a></li>
-                <li><a href="">Requests and Contact</a></li>
-                <li><a href="">Links</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="budget.html">Requests and Contact</a></li>
+                <li><a href="reference.html">Links</a></li>
             </ul>
         </nav>
     </header>
-    
+    <main>
+        <section class="reference-links">
+            <h1>Reference Links:</h1>
+            <ul>
+                <li><a href="https://www.thingiverse.com/">Thingiverse</a></li>
+                <li><a href="https://www.myminifactory.com/">MyMiniFactory</a></li>
+                <li><a href="https://www.cgtrader.com/">CGTrader</a></li>
+                <li><a href="https://www.turbosquid.com/">TurboSquid</a></li>
+                <li><a href="https://www.prusaprinters.org/">PrusaPrinters</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p> © <span id="currentyear"> </span> - Pedro Ribeiro - Montes Claros/MG</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

@@ -7,27 +7,25 @@
     <meta name="author" content="Pedro Ribeiro">
     <meta name="description"
       content="Pedro Ribeiro's BYU-Idaho - WDD 131">
-    <link rel="stylesheet" href="styles/">
-    <script src="scripts/" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navigation">
-            <img src="images/" alt="Logo">
+            <img src="images/logovoxel.png" alt="Logo">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Catalog</a></li>
-                <li><a href="">Requests and Contact</a></li>
-                <li><a href="">Links</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="budget.html">Requests and Contact</a></li>
+                <li><a href="reference.html">Links</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="title-budget">
-            <h1>Project Budget</h1>
-            <img src="images/" alt="budget-image">
-        </div>
         <section class="quote-form">
+            <h1 class="title-budget">Project Budget</h1>
             <fieldset class="personal-info">
                 <legend>Personal Information</legend>
                 <label for="first-name">First Name:</label>
@@ -55,11 +53,16 @@
                     <option value="asa">ASA</option>
                     <option value="tpu">TPU</option>
                 </select>
+            </fieldset> 
+            <fieldset>
+                <legend>Submit Your File</legend>
+                <label for="file-upload">Upload your 3D model file:</label>
+                <input type="file" id="file-upload" name="file-upload" accept=".stl,.obj,.3mf" required>
             </fieldset>
         </section>
     </main>
     <footer>
-        <p>©<span id="currentyear"></span> - Pedro Ribeiro - Montes Claros/MG</p>
+        <p> © <span id="currentyear"> </span> - Pedro Ribeiro - Montes Claros/MG</p>
         <p id="lastModified"></p>
     </footer>
 </body>

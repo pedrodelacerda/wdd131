@@ -1,0 +1,67 @@
+@media (min-width: 768px) {
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header {
+        display: block;
+        padding: 1rem 4rem;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    .about-us-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+
+    .visual-hidden {
+        grid-column: 1 / 4;
+        text-align: center;
+        grid-row: 1;
+        font-size: 2rem;
+    }
+
+    .about-block {
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    .do-block {
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+    .why-us-block {
+        grid-column: 1/4;
+        grid-row: 4;
+    }
+
+    .featured-projects {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+
+    #catalog-grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+}
