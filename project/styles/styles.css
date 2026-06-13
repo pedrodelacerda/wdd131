@@ -221,6 +221,24 @@ fieldset {
     margin-bottom: 1.5rem;
 }
 
+.quote-form {
+    display: block;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    width: 600px;
+    align-self: center;
+}
+
+.budget-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .quote-form legend {
     font-size: 1.2rem;
     font-weight: 700;
@@ -229,6 +247,11 @@ fieldset {
 
 .quote-form fieldset {
     background-color: var(--bg-primary);
+}
+
+.submit-btn{
+    margin-top: 1rem;
+    width: 100%;
 }
 
 .model-card {

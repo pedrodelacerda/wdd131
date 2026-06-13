@@ -11,11 +11,6 @@ const models3D = [
 ];
 
 
-const currentYearElement = document.querySelector("#currentyear");
-const lastModifiedElement = document.querySelector("#lastModified");
-const today = new Date();
-currentYearElement.innerHTML = today.getFullYear();
-lastModifiedElement.innerHTML = `Last Modification: ${document.lastModified}`;
 
 function displayModels(filteredList) {
     const grid = document.getElementById("catalog-grid");
@@ -37,6 +32,14 @@ function displayModels(filteredList) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    
+const currentYearElement = document.querySelector("#currentyear");
+const lastModifiedElement = document.querySelector("#lastModified");
+const today = new Date();
+currentYearElement.innerHTML = today.getFullYear();
+lastModifiedElement.innerHTML = `Last Modification: ${document.lastModified}`;
+
 if (document.getElementById("catalog-grid")) {
         
         displayModels(models3D);
@@ -60,4 +63,12 @@ if (document.getElementById("catalog-grid")) {
             displayModels(decoOnly);
         });
     }
+
+    if (localStorage.getItem("visitCount")) {
+        let visits = parseInt(localStorage.getItem("visitCount"));
+        localStorage.setItem("visitCount", visits + 1);
+    } else {
+        localStorage.setItem("visitCount", 1);
+    }
+    console.log(`Voxel Forge - Total Visits: ${localStorage.getItem("visitCount")}`);
 });
